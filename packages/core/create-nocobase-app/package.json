@@ -11,9 +11,7 @@
     "fs-extra": "^11.3.0",
     "tar": "^7.4.3"
   },
-  "bin": {
-    "create-nocobase-app": "./bin/index.js"
-  },
+  "bin": "./bin/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nocobase/nocobase.git",
