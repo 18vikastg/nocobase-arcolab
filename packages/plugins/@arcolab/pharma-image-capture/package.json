@@ -1,0 +1,28 @@
+{
+  "name": "@arcolab/pharma-image-capture",
+  "version": "1.0.0",
+  "displayName": "Pharma Image Capture",
+  "displayName.zh-CN": "制药图像采集",
+  "description": "FDA 21 CFR Part 11 compliant camera capture field for manufacturing evidence.",
+  "license": "AGPL-3.0",
+  "main": "./dist/server/index.js",
+  "keywords": ["Collection fields"],
+  "peerDependencies": {
+    "@nocobase/client": "1.x",
+    "@nocobase/server": "1.x",
+    "@nocobase/database": "1.x",
+    "@nocobase/actions": "1.x",
+    "@nocobase/utils": "1.x",
+    "@nocobase/test": "1.x"
+  },
+  "devDependencies": {
+    "@formily/antd-v5": "1.x",
+    "@formily/core": "2.x",
+    "@formily/react": "2.x",
+    "@formily/shared": "2.x",
+    "antd": "5.x",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^11.15.1"
+  }
+}

@@ -25,7 +25,15 @@
     "@nocobase/utils": "1.x"
   },
   "gitHead": "080fc78c1a744d47e010b3bbe5840446775800e4",
-  "nocobase": {
-    "defaultEnabled": true
+  "nocobase": "node packages/core/cli/bin/index.js",
+  "scripts": {
+    "nocobase": "node packages/core/cli/bin/index.js",
+    "dev": "node packages/core/cli/bin/index.js dev",
+    "start": "node packages/core/cli/bin/index.js start",
+    "build": "node packages/core/cli/bin/index.js build",
+    "postinstall": "node packages/core/cli/bin/index.js postinstall",
+    "clean": "node packages/core/cli/bin/index.js clean",
+    "lint": "eslint .",
+    "changelog": "auto-changelog -p -t keepachangelog"
   }
 }
