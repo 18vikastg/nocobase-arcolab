@@ -1,9 +1,9 @@
 {
   "name": "@arcolab/pharma-image-capture",
   "version": "1.0.0",
-  "displayName": "Pharma Image Capture",
+  "displayName": "Image Capture",
   "displayName.zh-CN": "制药图像采集",
-  "description": "FDA 21 CFR Part 11 compliant camera capture field for manufacturing evidence.",
+  "description": "Camera capture field",
   "license": "AGPL-3.0",
   "main": "./dist/server/index.js",
   "keywords": ["Collection fields"],

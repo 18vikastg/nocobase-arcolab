@@ -1,2 +1,2 @@
-export { PharmaImageCapturePlugin as default } from './dist/client';
+export { ImageCapturePlugin as default } from './dist/client';
 export * from './dist/client';

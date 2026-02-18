@@ -18,7 +18,7 @@ export class ImageCaptureFieldInterface extends CollectionFieldInterface {
   group = 'media';
   order = 2;
   title = tval('Image Capture');
-  description = tval('FDA 21 CFR Part 11 Compliant');
+  description = tval('Image Capture Field');
   isAssociation = true;
 
   default = {

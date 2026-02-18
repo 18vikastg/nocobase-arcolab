@@ -71,7 +71,7 @@ export const ImageCaptureReadPretty: React.FC<Props> = ({ value, size }) => {
     >
       <div style={{ marginBottom: 8 }}>
         <Tag icon={<SafetyCertificateOutlined />} color="blue">
-          FDA 21 CFR Part 11 — {captures.length} capture(s)
+          Image — {captures.length} capture(s)
         </Tag>
       </div>
       <Image.PreviewGroup>

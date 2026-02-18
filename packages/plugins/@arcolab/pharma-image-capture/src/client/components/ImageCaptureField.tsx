@@ -385,7 +385,7 @@ const Inner: React.FC<Props> = (props) => {
       <Alert
         message={
           <>
-            <SafetyCertificateOutlined /> <Text strong>FDA 21 CFR Part 11 Compliant</Text>
+            <SafetyCertificateOutlined /> <Text strong>Image Capture</Text>
           </>
         }
         description="Images are immutable, timestamped, and audit-logged."

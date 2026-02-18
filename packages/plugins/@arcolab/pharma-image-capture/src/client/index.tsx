@@ -15,7 +15,7 @@ import { ImageCaptureSettings } from './components/ImageCaptureSettings';
 import { useImageCaptureFieldProps } from './hooks/useImageCaptureFieldProps';
 import { NAMESPACE } from './locale';
 
-export class PharmaImageCapturePlugin extends Plugin {
+export class ImageCapturePlugin extends Plugin {
   async load() {
     this.app.dataSourceManager.addFieldInterfaces([ImageCaptureFieldInterface]);
     this.app.addComponents({
@@ -25,11 +25,11 @@ export class PharmaImageCapturePlugin extends Plugin {
     });
     this.app.addScopes({ useImageCaptureFieldProps });
     this.app.pluginSettingsManager.add(NAMESPACE, {
-      title: `{{t("Pharma Image Capture", { ns: "${NAMESPACE}" })}}`,
+      title: `{{t("Image Capture", { ns: "${NAMESPACE}" })}}`,
       icon: 'CameraOutlined',
       Component: ImageCaptureSettings,
     });
   }
 }
 
-export default PharmaImageCapturePlugin;
+export default ImageCapturePlugin;

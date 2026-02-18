@@ -10,7 +10,7 @@
 import { i18n } from '@nocobase/client';
 import { useTranslation } from 'react-i18next';
 
-export const NAMESPACE = 'pharma-image-capture';
+export const NAMESPACE = 'image-capture';
 
 export function lang(key: string, options = {}) {
   return i18n.t(key, { ns: NAMESPACE, ...options });

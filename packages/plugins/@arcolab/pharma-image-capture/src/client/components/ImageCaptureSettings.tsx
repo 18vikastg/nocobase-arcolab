@@ -17,15 +17,17 @@ export const ImageCaptureSettings: React.FC = () => {
   return (
     <Card>
       <Title level={4}>
-        <CameraOutlined /> Pharma Image Capture — Plugin Settings
+        <CameraOutlined /> Image Capture — Plugin Settings
       </Title>
       <Paragraph>
-        FDA 21 CFR Part 11 compliant camera capture. Each field is configured individually in collection settings.
+        Using the Image Capture plugin, you can configure fields to capture photos directly from the device camera. This
+        is ideal for compliance-sensitive environments like pharmaceuticals, where you need to ensure data integrity and
+        auditability of captured images.
       </Paragraph>
       <Descriptions title="Compliance Information" bordered column={1} size="small" style={{ marginBottom: 24 }}>
         <Descriptions.Item label="Standard">
           <Tag icon={<SafetyCertificateOutlined />} color="blue">
-            FDA 21 CFR Part 11
+            Image-capture-v1.0
           </Tag>
         </Descriptions.Item>
         <Descriptions.Item label="Image Immutability">

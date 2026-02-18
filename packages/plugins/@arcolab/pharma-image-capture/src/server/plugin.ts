@@ -12,7 +12,7 @@ import { Plugin } from '@nocobase/server';
 import { ImageCaptureField } from './fields/ImageCaptureField';
 import { ImageCaptureInterface } from './interfaces/ImageCaptureInterface';
 
-export class PharmaImageCapturePlugin extends Plugin {
+export class ImageCapturePlugin extends Plugin {
   beforeLoad() {
     this.db.registerFieldTypes({ imageCapture: ImageCaptureField });
   }
@@ -58,10 +58,10 @@ export class PharmaImageCapturePlugin extends Plugin {
           await next();
         },
         async update(ctx) {
-          ctx.throw(403, 'FDA 21 CFR Part 11: Audit records cannot be modified.');
+          ctx.throw(403, 'Audit records cannot be modified.');
         },
         async destroy(ctx) {
-          ctx.throw(403, 'FDA 21 CFR Part 11: Audit records cannot be deleted.');
+          ctx.throw(403, 'Audit records cannot be deleted.');
         },
       },
     });
@@ -91,7 +91,7 @@ export class PharmaImageCapturePlugin extends Plugin {
           },
         });
       } catch (err: any) {
-        this.log.warn(`[pharma-image-capture] Auto-audit failed: ${err.message}`);
+        this.log.warn(`[image-capture] Auto-audit failed: ${err.message}`);
       }
     });
 
@@ -126,15 +126,15 @@ export class PharmaImageCapturePlugin extends Plugin {
       throw new Error('FDA 21 CFR Part 11 Compliance Violation: Audit records cannot be deleted.');
     });
 
-    this.log.info('[pharma-image-capture] Plugin loaded.');
+    this.log.info('[image-capture] Plugin loaded.');
   }
 
   async install() {
-    this.log.info('[pharma-image-capture] Installed.');
+    this.log.info('[image-capture] Installed.');
   }
   async remove() {
-    this.log.warn('[pharma-image-capture] Removed. Audit data retained for compliance.');
+    this.log.warn('[image-capture] Removed. Audit data retained for compliance.');
   }
 }
 
-export default PharmaImageCapturePlugin;
+export default ImageCapturePlugin;
